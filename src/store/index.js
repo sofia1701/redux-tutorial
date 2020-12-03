@@ -7,7 +7,7 @@ const reducers = combineReducers({person:personReducer, game:gameReducer})
 
 //Initial states
 const initialStates = {
-  game: {name: "Surf"},
+  game: {name: "Football"},
   person: {name: "Sofia"}
 }
 
