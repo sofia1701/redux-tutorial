@@ -4,17 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store/index';
+import { Provider } from 'react-redux';
 
-let render = () => {
-	ReactDOM.render(
+ReactDOM.render(
+	<Provider store={store}>
 		<React.StrictMode>
 			<App />
-		</React.StrictMode>,
-		document.getElementById('root')
-	);
-};
-
-store.subscribe(render)
-render();
+		</React.StrictMode>
+	</Provider>,
+	document.getElementById('root')
+);
 
 reportWebVitals();
